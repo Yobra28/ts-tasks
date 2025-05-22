@@ -135,4 +135,3 @@ console.log("Tasks assigned to Brian:", manager.getTasksByUser(user1.id));
 manager.unassignTask(task1.id);
 console.log("After unassigning:", manager.getTasksByUser(user1.id));
 
-manager.deleteUser(user1.id);
