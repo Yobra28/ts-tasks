@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="h1">User Task Manager Interface</h1>
+  
+  <div class="section">
+    
+  <div class="container">
+    <h2>User Management</h2>
+
+    <div class="createuser">
+      <h3>Create User</h3>
+      <input class="addUserName" id="addUserName" placeholder="Enter name"/>
+      <button id="addUserBtn">Add User</button>
+    </div>
+
+    <div class="updateuser">
+      <h3>Update User</h3>
+      <select id="updateUserSelect"></select>
+      <input id="updateUserName" placeholder="New name"/>
+      <button id="updateUserBtn">Update User</button>
+    </div>
+
+    <div class="deleteuser">
+      <h3>Delete User</h3>
+      <select id="deleteUserSelect"></select>
+      <button id="deleteUserBtn">Delete User</button>
+    </div>
+
+    <div class="gettask">
+      <h3>Get Tasks by User</h3>
+      <select id="getUserTasksSelect"></select>
+      <button id="getUserTasksBtn">Show Tasks</button>
+    </div>
+  </div>
+
+  
+  <div class="taskmanagement">
+    <h2>Task Management</h2>
+
+    <h3>Create Task</h3>
+    <input id="addTaskTitle" placeholder="Task title"/>
+    <input id="addTaskDescription" placeholder="Task description"/>
+    <button id="addTaskBtn">Add Task</button>
+
+    <h3>Update Task</h3>
+    <select id="updateTaskSelect"></select>
+    <input id="updateTaskTitle" placeholder="New title"/>
+    <input id="updateTaskDescription" placeholder="New description"/>
+    <button id="updateTaskBtn">Update Task</button>
+
+    <h3>Delete Task</h3>
+    <select id="deleteTaskSelect"></select>
+    <button id="deleteTaskBtn">Delete Task</button>
+  </div>
+
+ <div class="unassign">
+    <h2>Assign/Unassign Tasks</h2>
+
+    <h3>Assign Task to User</h3>
+    <select id="assignTaskSelect"></select>
+    <select id="assignUserSelect"></select>
+    <button id="assignTaskBtn">Assign Task</button>
+
+    <h3>Unassign Task</h3>
+    <select id="unassignTaskSelect"></select>
+    <button id="unassignTaskBtn">Unassign Task</button>
+ </div>
+
+ 
+  <div class="display">
+    <h2>All Users:</h2>
+    <ul id="userList"></ul>
+
+    <h2>All Tasks:</h2>
+    <ul id="taskList"></ul>
+  </div>
+
+  </div>
+ 
+  <script type="module" src="index.js"></script>
+</body>
+</html>
